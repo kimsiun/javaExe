@@ -1,6 +1,22 @@
 package ch10.collection01.ch15.sec03.exam01;
 
 import java.util.HashSet;
+
+/* Set은 집합이다.
+ * 집합은 데이터의 모음이 뿐 '순서가 보장되지 않는다'
+ * 그러므로 중복을 허용하지 않는다.
+ * A = {1,2,3}
+ * B = {3,4,5}
+ * C = A ∪ B = {1,2,3,4,5}
+ * 데이터가 입력될 때 기존 데이터가 있는지 확인한다.
+ * 이대 사용하는 알고리즘이 Hash 알고리즘이다.
+ * 
+ * '검색속도는 빠르다.'
+ * '중복 허용 않는다'
+ * '순서 보장되지 않는다'
+ * 1. 비번, 2. 중복체크할때사용
+ * 해쉬 장점: 검색속도 빠름
+ * */
 import java.util.Set;
 
 public class HashSetExample {
@@ -9,16 +25,28 @@ public class HashSetExample {
 		//HashSet 컬렉션 생성
 		Set<String> set = new HashSet<String>();
 		
+		
 		//객체 저장
 		set.add("Java");
 		set.add("JDBC");
 		set.add("JSP");
 		set.add("Java");	//중복 객체이므로 저장하지 않음
 		set.add("Spring");
+		set.add("IBATIS");
+		set.add("Algorithm");
+		set.add("Pythone");
+		set.add("Pythone");
+		set.add("Jave");
 		
 		//저장된 객체 수 출력
 		int size = set.size();
 		
 		System.out.println("총 객체 수: " + size);
+		System.out.println();
+		
+		for(String element : set) {
+			System.out.println(element);
+			
+		}
 	}
 }

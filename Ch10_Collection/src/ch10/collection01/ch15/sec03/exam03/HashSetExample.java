@@ -15,6 +15,12 @@ public class HashSetExample {
 		set.add("JSP");
 		set.add("Spring");
 		
+		
+		/* 다른 컬렉션들도 iterator 인터페이스 상속을 받아 구현하였다.
+		 * Iterator 는 데이터의 처음부터 계속 끝까지 가져오는데 사용한다.
+		 * 알고리증미 다른 컬렉션을 Iterator 라는 1가지 방식으로 가져올 수 
+		 * 있게 하였으므로 효율성을 가져옴.
+		 * */
 		//객체를 하나식 가져와서 처리
 		Iterator<String> iterator = set.iterator();
 		while(iterator.hasNext()) {

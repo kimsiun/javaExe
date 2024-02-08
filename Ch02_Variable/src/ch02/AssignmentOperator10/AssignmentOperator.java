@@ -14,7 +14,7 @@ public class AssignmentOperator {
 		num = num + 20;
 		System.out.println(num);
 		
-		num += 30;		// num = num + 30;
+		num += 30;		// num = num + 30; num에 30을 더한다
 		System.out.println(num);
 		num += 40;
 		System.out.println(num);

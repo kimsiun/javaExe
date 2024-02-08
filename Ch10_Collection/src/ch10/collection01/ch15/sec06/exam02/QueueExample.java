@@ -3,7 +3,7 @@ package ch10.collection01.ch15.sec06.exam02;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class QuestionExample {
+public class QueueExample {
 	public static void main(String[] args) {
 		//Queue 컬렉션 생성
 		Queue<Message> messageQueue = new LinkedList<>();

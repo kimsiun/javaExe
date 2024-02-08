@@ -8,12 +8,16 @@ public class LogicOperator {
 		logic = true && true;
 		System.out.println("true && true => " + logic);
 		logic = true && false;
+		
+		
 		// Or 연산
 		System.out.println("true && false => " + logic);
 		logic = true || true;
 		System.out.println("true || true => " + logic);
 		logic = true || false;		
 		System.out.println("true || false => " + logic);
+		
+		
 		// Xor 연산
 		logic = true ^ true;
 		System.out.println("true ^ true => " + logic);
@@ -21,6 +25,8 @@ public class LogicOperator {
 		System.out.println("false ^ false => " + logic);
 		logic = true ^ false;
 		System.out.println("true ^ false => " + logic);
+		
+		
 		// Not 연산
 		logic = !false;
 		System.out.println("!false => " + logic);
